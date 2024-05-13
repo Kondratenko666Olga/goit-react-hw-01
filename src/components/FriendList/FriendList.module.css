@@ -1,0 +1,33 @@
+.online {
+    color: green;
+    font-size: small;
+}
+.offline {
+    color: red;
+    font-size: small;
+}
+
+.title{
+    font-weight: bold;
+}
+.listFriend{
+    justify-content: space-between;
+    margin-top: 50px;
+    gap: 4px;
+}
+.listItem{
+    padding: 10px;
+	border: 1px solid black;
+	border-radius: 5px;
+    background-color: aliceblue;
+    color: black;
+    text-align: center;
+}
+.containerFriend{
+    display: flex;
+    margin-top: 30px;
+}
+
+.listFriends{
+    gap: 10px;
+}
