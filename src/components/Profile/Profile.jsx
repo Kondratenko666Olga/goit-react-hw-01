@@ -1,4 +1,4 @@
-import styles from './Profile.modules.css';
+import styles from './Profile.module.css';
 
 const Profile = ({
     name,
@@ -7,31 +7,30 @@ const Profile = ({
     image,
     stats,
 }) => {
-    // console.log(name);
     return (
-        <div className={styles.card}>
-            <div className={styles.cardHeader}>
-                <img
-                className={styles.cardPoster}
+        <div className={styles.container}>
+            <div className={styles.profileWrapper}>
+                <img className={styles.profileImg}
                 src={image}
-                alt={name}
+                alt={`${name} avatar`}
                 />
-                <p>{name}</p>
-                <p>{tag}</p>
-                <p>{location}</p>
+                <p className={styles.userName}>{name}</p>
+                <p className={styles.userTag}>@{tag}</p>
+                <p className={styles.userLocation}>{location}</p>
             </div>
-            <ul>
-                <li>
-                    <span>Followers</span>
-                    <span>{stats.followers}</span>
+
+            <ul className={styles.statsList}>
+                <li className={styles.statsItem}>
+                <span className={styles.itemTitle}>Followers</span>
+                <span className={styles.subtitle} >{stats.followers}</span>
                 </li>
-                <li>
-                    <span>Views</span>
-                    <span>{stats.views}</span>
+                <li className={styles.statsItem}>
+                <span className={styles.itemTitle}>Views</span>
+                <span className={styles.subtitle} >{stats.views}</span>
                 </li>
-                <li>
-                    <span>Likes</span>
-                    <span>{stats.likes}</span>
+                <li className={styles.statsItem}>
+                <span className={styles.itemTitle}>Likes</span>
+                <span className={styles.subtitle} >{stats.likes}</span>
                 </li>
             </ul>
         </div>
