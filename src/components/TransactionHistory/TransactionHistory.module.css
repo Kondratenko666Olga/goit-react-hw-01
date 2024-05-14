@@ -1,0 +1,26 @@
+/* Стилі до парних рядків */
+.tableBody tr:nth-child(even) {
+    background-color: lightgrey;
+  }
+  
+  /* Стилі до непарних рядків */
+  .tableBody tr:nth-child(odd) {
+    background-color: white;
+  }
+
+  .tableMain {
+    text-align: center;
+    width: 100%;
+    font-style: normal;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+  .tableHead {
+    color: aliceblue;
+    background-color: black;
+  }
+  
+  .tableBody {
+    color: black;
+  }
